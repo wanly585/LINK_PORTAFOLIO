@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #4B79A1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    height: 100vh;
+    padding-top: 50px; 
+}
+
+.link {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.link img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 8px rgb(8, 8, 8);
+    
+}
+
+.icon {
+    margin-top: 20px;
+    
+}
+
+.icon a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+
+.link h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+}
+
+.link p {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(209, 209, 209);
+} 
+
+
+button {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+
+
+  @media (max-width: 600px) {
+    .container {
+        padding-top: 20px;
+    }
+
+    .link img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .icon a {
+        font-size: 20px;
+        margin: 0 8px;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+  }
+
+    @media (max-width: 369px) {
+    .link img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+  }
